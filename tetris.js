@@ -250,6 +250,12 @@ cButton[4].addEventListener('click', () => {
     playerRotate(1);
 });
 
+if(window.innerWidth > 768){
+    for(let i = 0; i < cButton.length; i++){
+        cButton[i].style.display = "none";
+    }
+}
+
 playerReset();
 updateScore();
 update();
